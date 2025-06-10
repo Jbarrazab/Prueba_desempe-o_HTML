@@ -1,0 +1,202 @@
+body {
+  margin: .5rem;
+  padding: .5rem;
+  background: #33333369;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+    
+    background: rgb(78, 78, 76);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/*Img*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  align-items: center;
+}
+
+.grid img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #db0404da;
+  transition: transform 0.3s ease;
+
+
+}
+
+.grid img:hover {
+  transform: scale(1.1);
+}
+
+.grid-productos{
+  display: grid;
+  grid-template-columns: repeat(minmax(280px, 1fr));
+  gap: 1.5em;
+}
+
+.producto{
+  background: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.producto :hover {
+  transform: translateY(5px);
+}
+
+.producto img{
+  width: 10%;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+}
+
+
+
+/* Productos */
+
+
+.producto {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  gap: 1rem;
+}
+
+
+
+
+.proyecto {
+  background: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+/* AFotter ajustes */
+
+footer {
+  background: #222;
+  color: #fff;
+  margin:0;
+  text-align: center;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+
+
+.redes a {
+  color: #fff;
+  margin: 0 0.5em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.redes a:hover {
+  color: rgb(70, 70, 64);
+}
+
+/*Grip*/
+
+
+/*Main*/
+main {
+  padding: 2em;
+}
+
+
+
+/*Contattos*/
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+form button {
+  background: #bec2c5;
+  color: white;
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+
+}
+
+form button:hover {
+  background: #696a6b;
+}
+
+
+/* ajustes responsivos*/
+@media (max-width: 768px) {
+    .grid {
+    grid-template-columns: 1fr;
+    }}
+
+@media (max-width: 480px) {
+    header{
+    padding: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+    padding: 0 1em;
+  }
+}
